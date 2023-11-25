@@ -119,7 +119,7 @@ export default function ReservationCard({
               {data.map((time) => {
                 return time.available ? (
                   <Link
-                    href={`/reserve/${slug}date=${day}T${time.time}&partySize=${partySize}`}
+                    href={`/reserver/${slug}?date=${day}T${time.time}&partySize=${partySize}`}
                     className="bg-red-600 cursor-pointer p-2 w-24 text-center text-white mb-3 rounded mr-3"
                   >
                     <p className="text-sm font-bold">
